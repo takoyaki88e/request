@@ -1,8 +1,8 @@
 import requests
 
 num = 1
-url = "https://5ch.net"
-AccessTime = 400
+url = "https://---"  #アクセスするリンクを---に挿入
+AccessTime = 400     #連続してアクセスする回数を指定
 print("AccessURL-->"+str(url))
 
 while num <= AccessTime:
